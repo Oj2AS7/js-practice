@@ -15,7 +15,7 @@ console.log(id===anotherid);
 const crushes = ["batool","manya","palak pawaar"]
 
 let myobj = {
-    name: ojas,
+    name: "ojas",
     age: 18,
 }
 
@@ -27,3 +27,22 @@ const myfunc = function(){
 console.log(typeof anotherId); // do typeof of all the variables
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+let myname = "ojas";
+let mylastname = myname;
+mylastname = " kotiyal";
+console.log(mylastname);
+
+
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@ybl"
+}
+let userTwo = userOne;
+userTwo.email = "user2@gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
