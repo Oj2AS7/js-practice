@@ -1,3 +1,5 @@
+// This is object literals
+
 const mySym =  Symbol("key1")
 //Symbol is not a constructor, so you should not use new with it.
 const Jsusers = {
