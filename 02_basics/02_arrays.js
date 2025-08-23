@@ -27,3 +27,8 @@ console.log(real_another_array_infinity);
 console.log(Array.isArray("Ojas"))
 console.log(Array.from("Ojas")) // to convert it in array
 console.log(Array.from({name :"Ojas"})) // this will give an empty array because it will not be able to indentify the length 
+
+let score1 = 100
+let score2 = 200
+let score3 = 300
+console.log(Array.of(score1, score2, score3)) // it will convert it into an array or Returns a new array from a set of elements.
