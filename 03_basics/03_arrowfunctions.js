@@ -50,6 +50,16 @@ const log_This = function(){
 }
 log_This();
 
+/* this is accesable as we want in local object only not in function it refers to the global object
+this.username gives undefined in your example because when you call log_This() as a regular function (not as an object method), this refers to the global object (or is undefined in strict mode). There is no username property on the global object, so this.username is undefined.
+
+Summary:
+
+In a regular function call, this is not bound to your local variable or function scope.
+Only object methods (like users.welcomemessage) have this referring to the object.
+Local variables like let username = "Ojas"; are not attached to this.
+ */
+
 const log_This_Arrow = () => {
     let username = "Ojas";
     //console.log(this.username); // this will give undefined
@@ -69,3 +79,5 @@ console.log(add_Two(2, 3)); // 5
 
 const return_object = () => ({ username: "Ojas" });  // if we dont write object in {} it will give undefined
 console.log(return_object()); // { username: 'Ojas' }
+
+
