@@ -77,7 +77,7 @@ const add_Two  = (a, b) => {
 console.log(add_Two(2, 3)); // 5
 
 
-const return_object = () => ({ username: "Ojas" });  // if we dont write object in {} it will give undefined
+const return_object = () => ({ username: "Ojas" });  // if we dont write object {} in () it will give undefined
 console.log(return_object()); // { username: 'Ojas' }
 
 
